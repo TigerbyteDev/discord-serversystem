@@ -1,25 +1,28 @@
 // Importing Libraries
 import { Client, Intents, env } from "./deps.ts"
 
-// Importing Loaders
-import { moduleLoader } from "./loading/commands.ts"
+// Importing Functions
+import { commandLoader } from "./loading/commands.ts"
+import { errorReply } from "./functions.ts";
 
-const maps = {
+// Importing Types
+import { loaderMap, commandFunction } from "./types.ts"
+
+const maps: loaderMap = {
     commands: new Map(),
-    events: new Map()
 };
 
 const client = new Client()
 
 client.on("ready", async () => {
-    await moduleLoader(client, maps, Deno.cwd())
+    await commandLoader(client, maps, Deno.cwd())
     console.log(`Serversystem gestartet! Eingeloggt als ${client.user?.tag}!`)
 });
 
 client.on("interactionCreate", async (interaction) => {
     if (!interaction.isApplicationCommand()) return;
-    const command = maps.commands.get(interaction.name)
-    await command(client, interaction, interaction.user, interaction.member)
+    const command: commandFunction = maps.commands.get(interaction.name)?.run ?? errorReply
+    await command(interaction, client, interaction.user, interaction.member)
 })
 
 let token = Deno.env.get("TOKEN");

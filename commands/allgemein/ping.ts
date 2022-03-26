@@ -1,13 +1,13 @@
-import { Client, ApplicationCommandInteraction } from "../../deps.ts"
+import { commandFile } from "../../types.ts"
 
-export const command = {
+export default {
     name: "ping",
-    description: "Pingcommand halt",
+    description: "Pong halt lol",
 
-    run: async (client: Client, interaction: ApplicationCommandInteraction, user: any, member: any): Promise<void> => {
+    run: async (interaction): Promise<void> => {
         await interaction.reply("ping", {
             ephemeral: true
         })
         return;
     }
-}
+} as commandFile

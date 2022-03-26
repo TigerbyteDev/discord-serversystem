@@ -1,6 +1,8 @@
 import { join, Client } from "../deps.ts"
 
-export const moduleLoader = async (client: Client, map: any, dirname: string) => {
+import { loaderMap } from "../types.ts"
+
+export const commandLoader = async (client: Client, map: loaderMap, dirname: string) => {
     console.log("Lade Befehle...");
     console.log(Deno.cwd())
     const folders = await Deno.readDir(join(dirname, "./commands"))
@@ -10,10 +12,11 @@ export const moduleLoader = async (client: Client, map: any, dirname: string) =>
 
         for await (const file of commands) {
             if (!file.name.endsWith(".ts")) continue;
-            const { command } = await import(`../commands/${folder.name}/${file.name}`)
+            const command = await import(`../commands/${folder.name}/${file.name}`)
             console.log(command)
-            map.commands.set(command.name, command.run)
-            console.log(map.commands.get(command.name).toString())
+            map.commands.set(command.name, command)
         }
     }
+
+
 }
