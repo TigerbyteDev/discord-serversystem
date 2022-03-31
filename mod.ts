@@ -22,7 +22,7 @@ client.on("ready", async () => {
 client.on("interactionCreate", async (interaction) => {
     if (!interaction.isApplicationCommand()) return;
     const command: commandFunction = maps.commands.get(interaction.name)?.run ?? errorReply
-    await command(interaction, client, interaction.user, interaction.member)
+    await command(interaction, client, interaction.member, interaction.user)
 })
 
 let token = Deno.env.get("TOKEN");

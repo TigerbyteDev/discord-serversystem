@@ -1,4 +1,4 @@
-import { ApplicationCommandInteraction, Client } from "./deps.ts";
+import { ApplicationCommandInteraction, Client, Member, User } from "./deps.ts";
 
 export interface loaderMap {
     commands: Map<string, commandFile>;
@@ -13,5 +13,4 @@ export interface commandFile {
     run: commandFunction;
 }
 
-// TODO: Type hinzufügen für commandFunction
-export type commandFunction = (interaction: ApplicationCommandInteraction, client?: Client, user?: any, member?: any) => Promise<void>;
+export type commandFunction = (interaction: ApplicationCommandInteraction, client?: Client, member?: Member, user?: User) => Promise<void>;

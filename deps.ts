@@ -2,7 +2,9 @@
 export {
     Client,
     Intents,
-    InteractionsClient
+    InteractionsClient,
+    Member,
+    User
 } from "https://deno.land/x/harmony@v2.6.0/mod.ts"
 
 export {
