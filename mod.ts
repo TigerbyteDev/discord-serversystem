@@ -3,7 +3,7 @@ import { Client, Intents, env } from "./deps.ts"
 
 // Importing Functions
 import { commandLoader } from "./loading/commands.ts"
-import { errorReply } from "./functions.ts";
+import { errorReply, resetAPI } from "./functions.ts";
 
 // Importing Types
 import { loaderMap, commandFunction } from "./types.ts"
@@ -15,6 +15,7 @@ const maps: loaderMap = {
 const client = new Client()
 
 client.on("ready", async () => {
+    await resetAPI(client)
     await commandLoader(client, maps, Deno.cwd())
     console.log(`Serversystem gestartet! Eingeloggt als ${client.user?.tag}!`)
 });

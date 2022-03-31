@@ -7,6 +7,10 @@ export {
     User
 } from "https://deno.land/x/harmony@v2.6.0/mod.ts"
 
+export type {
+    SlashCommandPartial
+} from "https://deno.land/x/harmony@v2.6.0/mod.ts"
+
 export {
     ApplicationCommandInteraction
 } from "https://deno.land/x/harmony@v2.6.0/src/structures/applicationCommand.ts"
@@ -26,3 +30,6 @@ export {
 export {
     join
 } from "https://deno.land/std@0.130.0/path/mod.ts"
+
+// MS
+export { ms } from "https://raw.githubusercontent.com/denolib/ms/master/ms.ts";
