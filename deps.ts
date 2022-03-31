@@ -1,19 +1,19 @@
 // Harmony, Discord library
+// Objekte
 export {
     Client,
     Intents,
     InteractionsClient,
     Member,
-    User
+    User,
+    SlashCommandOptionType,
 } from "https://deno.land/x/harmony@v2.6.0/mod.ts"
 
+// Types
 export type {
-    SlashCommandPartial
-} from "https://deno.land/x/harmony@v2.6.0/mod.ts"
-
-export {
+    SlashCommandPartial,
     ApplicationCommandInteraction
-} from "https://deno.land/x/harmony@v2.6.0/src/structures/applicationCommand.ts"
+} from "https://deno.land/x/harmony@v2.6.0/mod.ts"
 
 // DotENV
 import {
