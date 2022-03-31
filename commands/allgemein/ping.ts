@@ -1,6 +1,6 @@
 import { commandFile } from "../../types.ts"
 
-export default {
+export const commandSetup: commandFile = {
     name: "ping",
     description: "Pong halt lol",
 
@@ -10,4 +10,4 @@ export default {
         })
         return;
     }
-} as commandFile
+}
