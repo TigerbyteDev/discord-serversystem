@@ -14,7 +14,7 @@ export const commandSetup: commandFile = {
     }],
     run: async (interaction) => {
         for await (const character of "abcdefghijklmnopqrstuvwxyz".split("")) {
-            // @ts-ignore
+            // @ts-ignore:
             characters[character] = characters[character.toUpperCase()] = `:regional_indicator_${character}:`;
         }
 
@@ -22,9 +22,10 @@ export const commandSetup: commandFile = {
         await interaction.reply(
             input
                 .split("")
-                // @ts-ignore
+                // @ts-ignore:
                 .map((c) => characters[c] || c)
                 .join("")
         )
+        return;
     }
 }

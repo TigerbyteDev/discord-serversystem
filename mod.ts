@@ -22,6 +22,8 @@ client.on("ready", async () => {
 
 client.on("interactionCreate", async (interaction) => {
     if (!interaction.isApplicationCommand()) return;
+    if (!interaction.guild) return;
+
     const command: commandFunction = maps.commands.get(interaction.name)?.run ?? errorReply
     await command(interaction, client, interaction.member, interaction.user)
 })
@@ -32,4 +34,4 @@ if (!token) {
     token = env["TOKEN"]
 }
 
-await client.connect(token, Intents.None);
+await client.connect(token, Intents.All);

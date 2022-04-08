@@ -9,6 +9,7 @@ export interface commandFile {
     description: string;
     // TODO: Type hinzufügen für commandFile
     options?: commandOption[]
+    ignore?: boolean;
 
     run: commandFunction;
 }
@@ -17,7 +18,13 @@ interface commandOption {
     name: string;
     type: SlashCommandOptionType;
     description: string;
-    required?: boolean;
+    required: boolean;
+    choices?: commandOptionChoice[];
 }
 
-export type commandFunction = (interaction: ApplicationCommandInteraction, client?: Client, member?: Member, user?: User) => Promise<void>;
+type commandOptionChoice = {
+    name: string;
+    value: string;
+}
+
+export type commandFunction = (interaction: ApplicationCommandInteraction, client: Client, member: Member | undefined, user: User) => Promise<void>;

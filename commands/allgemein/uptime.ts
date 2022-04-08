@@ -6,7 +6,7 @@ export const commandSetup: commandFile = {
     description: "Pong halt",
 
     run: async (interaction, client): Promise<void> => {
-        await interaction.reply(`Online seit ${ms(client?.uptime ?? 0)}`, {
+        await interaction.reply(`Online seit ${ms(client.uptime)}`, {
             ephemeral: true
         })
         return;
