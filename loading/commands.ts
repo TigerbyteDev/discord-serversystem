@@ -18,7 +18,8 @@ export const commandLoader = async (client: Client, map: loaderMap, dirname: str
             if (!file.name.endsWith(".ts")) continue;
             const {commandSetup} = await import(`../commands/${folder.name}/${file.name}`)
 
-            if (commandSetup.name && commandSetup.description) {
+            if (commandSetup?.ignore) continue;
+            if (commandSetup?.name && commandSetup?.description) {
                 map.commands.set(commandSetup.name, commandSetup)
                 slashCommands.push({
                     name: commandSetup.name,
@@ -27,9 +28,13 @@ export const commandLoader = async (client: Client, map: loaderMap, dirname: str
                 })
 
                 status = true
+            } else {
+                console.log(commandSetup)
+                console.log(`Name oder Beschreibung in ${file.name} nicht gefunden. Richtig exportiert?`)
             }
 
-            console.log(`command: ${commandSetup.name} | datei: ${file.name} | geladen: ${status}`)
+
+            console.log(`command: ${commandSetup?.name} | datei: ${file.name} | geladen: ${status}`)
         }
     }
 
