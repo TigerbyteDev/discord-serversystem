@@ -20,24 +20,22 @@ export const commandSetup: commandFile = {
             required: false
         }
     ],
-    ignore: true,
+    ignore: false,
 
     run: async (interaction) => {
         const subreddit = await getOption(interaction, "subreddit")?.value ?? subreddits[Math.floor(Math.random() * subreddits.length)]
-        const data =await fetch(`https://www.reddit.com/r/${subreddit}/comments/txnqgr/${subreddit}/.json?utm_campaign=redirect&utm_medium=desktop&utm_source=reddit&utm_name=random_link`)
-        // @TODO: API broken oder so, mehr debugging soon
-        console.log(data.url)
-        // @ts-ignore API und so
-        const children = data[0].data.children[0].data
 
-        console.log(children)
+        const req = await fetch("https://www.reddit.com/r/memes/random/.json")
+            .then((res) => res.json());
+        const { url, title, ups, permaLink } = req[0].data.children[0].data
 
         await interaction.reply({
             embeds: [
                 new Embed()
-                    .setTitle(children.title)
-                    .setImage(children.url)
-                    .setFooter(`👍| ${children.ups} 💬| ${children.num_comments}`)
+                    .setTitle(title)
+                    .setURL(`https://www.reddit.com${permaLink}`)
+                    .setImage(url)
+                    .setFooter(`👍 ${ups} Likes`)
             ]
         })
     }
