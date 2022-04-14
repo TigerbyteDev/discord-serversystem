@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "node hello.js"
+  }
+}
