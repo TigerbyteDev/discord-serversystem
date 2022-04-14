@@ -37,7 +37,6 @@ export const commandLoader = async (client: Client, map: loaderMap, dirname: str
             console.log(`command: ${commandSetup?.name} | datei: ${file.name} | geladen: ${status}`)
         }
     }
-
     for await (const guild of await client.guilds.array()) {
         if (!guilds.includes(guild.id)) continue;
         console.log(`Registriere Befehle in ${guild.name}`)

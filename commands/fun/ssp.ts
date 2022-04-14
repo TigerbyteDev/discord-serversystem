@@ -28,7 +28,9 @@ export const commandSetup: commandFile = {
         }
     ],
 
-    run: async (interaction, client) => {
+    run: async (interaction, {
+        client,
+    }) => {
         const userWahl = getOption(interaction, "wahl")?.value
         const botWahl = auswahl[Math.floor(Math.random() * auswahl.length)]
 

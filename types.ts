@@ -1,14 +1,28 @@
-import {ApplicationCommandInteraction, Client, Member, SlashCommandOptionType, User} from "./deps.ts";
+import {
+    ApplicationCommandInteraction,
+    Client,
+    Member,
+    SlashCommandOptionType,
+    User,
+    GuildTextChannel,
+    MessageComponentInteraction,
+    Permissions
+} from "./deps.ts";
+import {ButtonComponent} from "https://deno.land/x/harmony@v2.6.0/src/types/messageComponents.ts";
 
 export interface loaderMap {
     commands: Map<string, commandFile>;
+    buttons: Map<string, buttonFile>;
 }
 
+export type interactionFunction = (interaction: ApplicationCommandInteraction | MessageComponentInteraction, properties: interactionFunctionProperties) => Promise<void>;
+
+// Commands
 export interface commandFile {
     name: string;
     description: string;
-    // TODO: Type hinzufügen für commandFile
     options?: commandOption[]
+    permissions?: Permissions;
     ignore?: boolean;
 
     run: commandFunction;
@@ -27,4 +41,19 @@ type commandOptionChoice = {
     value: string;
 }
 
-export type commandFunction = (interaction: ApplicationCommandInteraction, client: Client, member: Member | undefined, user: User) => Promise<void>;
+interface interactionFunctionProperties {
+    client: Client;
+    member: Member | undefined;
+    user: User;
+    channel: GuildTextChannel | undefined;
+}
+
+export type commandFunction = (interaction: ApplicationCommandInteraction, properties: interactionFunctionProperties) => Promise<void>;
+
+// Components
+export interface buttonFile {
+    button: ButtonComponent;
+    run: componentFunction;
+}
+
+export type componentFunction = (interaction: MessageComponentInteraction, properties: interactionFunctionProperties) => Promise<void>;

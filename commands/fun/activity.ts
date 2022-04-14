@@ -66,7 +66,9 @@ export const commandSetup: commandFile = {
         }
     ],
 
-    run: async (interaction, client) => {
+    run: async (interaction, {
+        client
+    }) => {
         const dienst = await getOption(interaction, "dienst")?.value
         const channelID = await getOption(interaction, "channel")?.value
         const channel = await client.channels.fetch(channelID)

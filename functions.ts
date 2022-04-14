@@ -1,7 +1,8 @@
-import { commandFunction } from "./types.ts";
+import { interactionFunction } from "./types.ts";
 import {ApplicationCommandInteraction, Client} from "./deps.ts"
+import { maps } from "./mod.ts"
 
-export const errorReply: commandFunction = async (interaction) => {
+export const errorReply: interactionFunction = async (interaction) => {
     await interaction.reply("Diesen Befehl gibt es nicht :/")
     return;
 }
@@ -14,4 +15,8 @@ export const resetAPI = async (client: Client): Promise<void> => {
 
 export const getOption = (interaction: ApplicationCommandInteraction, text: string) => {
     return interaction.options.find(o => o.name === text)
+}
+
+export const getButton = (name: string) => {
+    return maps.buttons.get(name)?.button;
 }

@@ -25,7 +25,7 @@ export const commandSetup: commandFile = {
     run: async (interaction) => {
         const subreddit = await getOption(interaction, "subreddit")?.value ?? subreddits[Math.floor(Math.random() * subreddits.length)]
 
-        const req = await fetch("https://www.reddit.com/r/memes/random/.json")
+        const req = await fetch(`https://www.reddit.com/r/${subreddit}/random/.json`)
             .then((res) => res.json());
         const { url, title, ups, permaLink } = req[0].data.children[0].data
 
@@ -33,7 +33,6 @@ export const commandSetup: commandFile = {
             embeds: [
                 new Embed()
                     .setTitle(title)
-                    .setURL(`https://www.reddit.com${permaLink}`)
                     .setImage(url)
                     .setFooter(`👍 ${ups} Likes`)
             ]
