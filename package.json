@@ -1,7 +1,11 @@
 {
-  "devDependencies": {
-  },
   "scripts": {
-    "test": "node hello.js"
+    "test": "node src/index.js"
+  },
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "distube": "^3.3.4",
+    "dotenv": "^16.0.0",
+    "tdhandler": "^1.1.1"
   }
 }
