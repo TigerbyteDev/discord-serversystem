@@ -6,6 +6,8 @@
     "discord.js": "^13.6.0",
     "distube": "^3.3.4",
     "dotenv": "^16.0.0",
-    "tdhandler": "^1.1.1"
+    "mathjs": "^10.4.3",
+    "tdhandler": "^1.1.1",
+    "util": "^0.12.4"
   }
 }
