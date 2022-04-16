@@ -46,7 +46,7 @@ module.exports = {
         const userPB = user.displayAvatarURL({
             dynamic: true
         });
-        
+
         // Check if the option was choosen, if so add it to the array
         const options = [];
         let skip = false;
@@ -54,7 +54,7 @@ module.exports = {
             if (interaction.options.get(i.toString())) {
                 const option = interaction.options.get(i.toString()).value;
                 const emoji = emojis[i - 1];
-                
+
                 options.push(`${emoji} ${option}`);
             } else {
                 skip = i;
@@ -65,16 +65,16 @@ module.exports = {
         await interaction.reply({
             embeds: [
                 await tdhandler.createEmbed("default")
-                    .setAuthor({
-                        name: frage, 
-                        iconURL: userPB
-                    })
-                    .setDescription(options.join("\n"))
+                .setAuthor({
+                    name: frage,
+                    iconURL: userPB
+                })
+                .setDescription(options.join("\n"))
             ]
         });
 
         const reply = await interaction.fetchReply();
-        
+
         // Add the reactions to the message so the members can vote
         for (i = 1; i <= 5; i++) {
             if (interaction.options.get(i.toString())) {
