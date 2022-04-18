@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2297013c-c78d-47e4-b402-82fbaca4ecb7" name="Changes" comment="init part 3" />
+    <list default="true" id="2297013c-c78d-47e4-b402-82fbaca4ecb7" name="Changes" comment="init part 4">
+      <change afterPath="$PROJECT_DIR$/src/commands/moderation/clear.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/moderation/mute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/allgemeines/ping.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/allgemeines/ping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/allgemeines/poll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/allgemeines/poll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/allgemeines/taschenrechner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/allgemeines/taschenrechner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/allgemeines/uptime.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/allgemeines/uptime.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package" />
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -20,8 +33,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="27nUj4vOsyj4qrPiaiv1te98Y8q" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,7 +52,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "E:/Dev/discord-serversystem",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\adabr\\AppData\\Local\\JetBrains\\Toolbox\\apps\\IDEA-U\\ch-0\\221.5080.210\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
   }
 }]]></component>
   <component name="RunManager">
@@ -63,6 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649955475652</updated>
       <workItem from="1649955476885" duration="758000" />
+      <workItem from="1650287806686" duration="6911000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1649955796581</created>
@@ -83,6 +103,14 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/commands/allgemeines/ping.js" />
+        <option value="$PROJECT_DIR$/src/commands/allgemeines/uptime.js" />
+        <option value="$PROJECT_DIR$/src/commands/allgemeines/taschenrechner.js" />
+        <option value="$PROJECT_DIR$/src/commands/allgemeines/poll.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

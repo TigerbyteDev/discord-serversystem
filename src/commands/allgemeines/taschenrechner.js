@@ -6,8 +6,8 @@ const {
   const gray = 'SECONDARY';
   const green = 'SUCCESS';
   const red = 'DANGER';
-  // @TODO Das fixen, = Zeichen funktioniert nicht 
-  // @TODO Code optimieren mit beispielsweise FOR Loop
+  // TODO Das fixen, = Zeichen funktioniert nicht
+  // TODO Code optimieren mit beispielsweise FOR Loop
   module.exports = {
     name: "",
     description: "Öffne einen neuen Taschenrechner",
@@ -27,7 +27,7 @@ const {
         },
       ],
     }],
-  
+
     run: async (interaction) => {
       if (interaction.options.get('sichtbarkeit')) sichtbarkeit = JSON.parse(interaction.options.get("sichtbarkeit").value);
       else sichtbarkeit = true;
@@ -42,7 +42,7 @@ const {
           }
           return result;
         }
-  
+
         //Define Numbers
         let str = " ";
         let math = " ";
@@ -72,7 +72,7 @@ const {
         const calc_irrc = i(20);
         const calculator_pi = i(20);
         const calculator_starten = i(20);
-  
+
         //Setup Buttonstyle
         const c = new MessageButton()
           .setLabel("C")
@@ -174,7 +174,7 @@ const {
           .setLabel("×10")
           .setCustomId(calculator_starten)
           .setStyle(blurple);
-  
+
         //Startmessage
         const filter = (btn) => btn.user.id == interaction.user.id;
         interaction.reply({
@@ -256,22 +256,22 @@ const {
                 ],
               });
             }
-  
+
             //Start listener
             const collector = interaction.channel.createMessageComponentCollector({
               filter,
               time: 600000
             });
-  
+
             //If Button presser --> run validation
             collector.on("collect", async btn => {
               if (btn.user.id !== interaction.user.id) return btn.reply({
                 content: 'Nur der Rechnerbesitzer kann diesen auch nutzen! Erstelle einen mit /taschenrechner c:',
                 ephemeral: true
               });
-  
+
               btn.deferUpdate();
-  
+
               if (btn.customId === calculator_equal) {
                 try {
                   str += " = " + require("mathjs").evaluate(math) + "";
@@ -292,7 +292,7 @@ const {
                   return;
                 }
               }
-  
+
               if (btn.customId === calc_irrc) {
                 str = 'Taschenrechner abgeschaltet';
                 stringify = "```\n" + str + "\n```";
@@ -301,7 +301,7 @@ const {
                 lock();
                 return;
               }
-  
+
               switch (btn.customId) {
                 case calculator_0:
                   str += "0";
@@ -396,17 +396,17 @@ const {
                   str = str.split("");
                   str.pop();
                   str = str.join("");
-  
+
                   math = math.split("");
                   math.pop();
                   math = math.join("");
                   break;
               }
-  
+
               stringify = "```\n" + str + "\n```";
               edit();
             });
-  
+
             // If time over, deactivate
             const tenmin = 600000
             // const tenmin = 10000

@@ -17,6 +17,8 @@ module.exports = {
                     "inline": true
                 })
             ]
-        })
+        });
+
+        return true;
     }
 }

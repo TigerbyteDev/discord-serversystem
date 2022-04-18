@@ -92,5 +92,7 @@ module.exports = {
                 ephemeral: true
             });
         }
+
+        return true;
     }
 }

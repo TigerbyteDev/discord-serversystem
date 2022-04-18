@@ -18,5 +18,7 @@ module.exports = {
                 .setDescription(`${client.user.username} ist online seit ${days}, ${hours}, ${minutes} und ${seconds}`)
             ]
         })
+
+        return true;
     }
 }
