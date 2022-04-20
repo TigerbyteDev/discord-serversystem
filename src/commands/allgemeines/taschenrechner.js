@@ -9,7 +9,7 @@ const {
   // TODO Das fixen, = Zeichen funktioniert nicht
   // TODO Code optimieren mit beispielsweise FOR Loop
   module.exports = {
-    name: "",
+    name: "taschenrechner",
     description: "Öffne einen neuen Taschenrechner",
     options: [{
       name: 'sichtbarkeit',
@@ -27,6 +27,7 @@ const {
         },
       ],
     }],
+    ignoreLoading: true,
 
     run: async ({interaction}) => {
       if (interaction.options.get('sichtbarkeit')) sichtbarkeit = JSON.parse(interaction.options.get("sichtbarkeit").value);
