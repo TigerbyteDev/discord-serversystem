@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2297013c-c78d-47e4-b402-82fbaca4ecb7" name="Changes" comment="adopted tdhandler@1.1.3" />
+    <list default="true" id="2297013c-c78d-47e4-b402-82fbaca4ecb7" name="Changes" comment="adopted tdhandler@1.1.4">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/allgemeines/taschenrechner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/allgemeines/taschenrechner.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,6 +83,9 @@
       <workItem from="1650389191018" duration="3135000" />
       <workItem from="1650461006330" duration="1613000" />
       <workItem from="1650469592299" duration="170000" />
+      <workItem from="1650470525234" duration="383000" />
+      <workItem from="1650472044730" duration="120000" />
+      <workItem from="1650472535469" duration="418000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1649955796581</created>
@@ -129,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650469756762</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="adopted tdhandler@1.1.4">
+      <created>1650470614275</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1650470614275</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,7 +176,8 @@
     <MESSAGE value="added Ticket system" />
     <MESSAGE value="added Activities and Meme" />
     <MESSAGE value="adopted tdhandler@1.1.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="adopted tdhandler@1.1.3" />
+    <MESSAGE value="adopted tdhandler@1.1.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="adopted tdhandler@1.1.4" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
