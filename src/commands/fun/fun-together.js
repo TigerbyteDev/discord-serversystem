@@ -38,7 +38,7 @@ module.exports = {
         required: true
     }],
 
-    run: async (interaction, client, tdhandler) => {
+    run: async ({interaction, client, tdhandler}) => {
         const dienst = await interaction.options.get("dienst")?.value
         const channelID = await interaction.options.get("channel")?.value
         const channel = await client.channels.fetch(channelID)

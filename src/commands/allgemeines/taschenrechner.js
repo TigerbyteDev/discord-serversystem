@@ -28,7 +28,7 @@ const {
       ],
     }],
 
-    run: async (interaction) => {
+    run: async ({interaction}) => {
       if (interaction.options.get('sichtbarkeit')) sichtbarkeit = JSON.parse(interaction.options.get("sichtbarkeit").value);
       else sichtbarkeit = true;
       try {

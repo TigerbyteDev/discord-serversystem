@@ -18,7 +18,7 @@ module.exports = {
     ],
     ignore: false,
 
-    run: async (interaction, client, tdhandler) => {
+    run: async ({interaction, tdhandler}) => {
         const subreddit = await interaction.options.get("subreddit")?.value ?? subreddits[Math.floor(Math.random() * subreddits.length)]
 
         const req = await fetch(`https://www.reddit.com/r/${subreddit}/random/.json`)

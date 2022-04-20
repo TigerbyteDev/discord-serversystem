@@ -6,7 +6,7 @@ module.exports = {
         disabled: false
     },
 
-   run: async (interaction, client, tdhander, user) => {
+   run: async ({interaction, user}) => {
     await interaction.reply(`Das Ticket wird in **10 Sekunden** gelöscht... Angefragt von ${user}`);
     setTimeout(() => interaction.channel?.delete(), 10000);
     }

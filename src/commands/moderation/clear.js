@@ -12,7 +12,7 @@ module.exports = {
     clientPermissions: ["MANAGE_MESSAGES"],
     userPermissions: ["MANAGE_MESSAGES"],
 
-    run: async (interaction, client, tdhandler, user) => {
+    run: async ({interaction, tdhandler, user}) => {
         const anzahl = interaction.options.get("anzahl")?.value;
 
         if (anzahl < 1 || anzahl > 100) {
@@ -31,7 +31,6 @@ module.exports = {
             ephemeral: true
         });
 
-        let conter = 0;
         await interaction.channel.bulkDelete(anzahl, true)
 
         await interaction.channel.send({

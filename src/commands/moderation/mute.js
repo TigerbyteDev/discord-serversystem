@@ -29,7 +29,7 @@ module.exports = {
     clientPermissions: ["TIMEOUT_MEMBERS"],
     userPermissions: ["TIMEOUT_MEMBERS"],
 
-    run: async (interaction, client, tdhandler, user) => {
+    run: async ({interaction, tdhandler, user}) => {
         const person = interaction.options.get("person");
 
         if (person?.member.isCommunicationDisabled()) {

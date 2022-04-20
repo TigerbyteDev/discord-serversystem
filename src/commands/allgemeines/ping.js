@@ -2,7 +2,7 @@ module.exports = {
     name: "ping",
     description: "Erhalte den Botping",
 
-    run: async (interaction, client, tdhandler) => {
+    run: async ({interaction, client, tdhandler}) => {
         await interaction.reply({
             embeds: [
                 await tdhandler.createEmbed("default")

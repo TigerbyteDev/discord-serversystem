@@ -2,7 +2,7 @@ module.exports = {
     name: "uptime",
     description: "Zeigt, wie lang der Bot bereits online ist",
 
-    run: async (interaction, client, tdhandler) => {
+    run: async ({interaction, client, tdhandler}) => {
         // format the uptime
         const uptime = client.uptime,
             days = `**${Math.floor(uptime / 86400000)} Tage**`,

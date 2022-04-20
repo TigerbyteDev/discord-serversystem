@@ -7,7 +7,7 @@ module.exports = {
         disabled: false
     },
 
-    run: async (interaction, client, tdhandler, user) => {
+    run: async ({interaction, tdhandler, user}) => {
         const channel = await interaction.guild?.channels.create(`ticket-von-${user.username}`, {
             topic: `Ein Ticket von ${user}. Erstellt am <t:${new Date()}:d>`,
             permissionOverwrites: [

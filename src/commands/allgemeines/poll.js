@@ -41,7 +41,7 @@ module.exports = {
         }
     ],
 
-    run: async (interaction, client, tdhandler, user) => {
+    run: async ({interaction, tdhandler, user}) => {
         const frage = interaction.options.get("frage").value;
         const userPB = user.displayAvatarURL({
             dynamic: true

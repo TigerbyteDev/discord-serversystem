@@ -4,7 +4,7 @@ module.exports = {
     description: "Lege einen Ticketkanal fest.",
     clientPermissions: ["MANAGE_CHANNELS"],
 
-    run: async (interaction, client, tdhandler) =>
+    run: async ({interaction, tdhandler}) =>
         await interaction.reply({
             embeds: [
                 tdhandler.createEmbed("default")
