@@ -66,7 +66,6 @@ module.exports = {
             return false;
         }
 
-        console.log(zeit)
         await person?.member.timeout(zeit, grund);
 
         await interaction.reply({

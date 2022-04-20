@@ -9,13 +9,13 @@ const client = new Client({
 new TDInstance({
     handling: {
         // The directory the other paths are oriented to
-        baseDir: __dirname, 
+        baseDir: __dirname,
         // The directory your events are located in
         // eventsDir: "./events",
         // The directory your commands are located in
         commandsDir: "./commands",
         // The directory your buttons are located in
-        // buttonsDir: "./buttons",
+        buttonsDir: "./buttons",
         // The directory your context menus are located in
         // contextDir: "./context",
     },

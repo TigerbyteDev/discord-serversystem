@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2297013c-c78d-47e4-b402-82fbaca4ecb7" name="Changes" comment="init part 4">
-      <change afterPath="$PROJECT_DIR$/src/commands/moderation/clear.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/moderation/mute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2297013c-c78d-47e4-b402-82fbaca4ecb7" name="Changes" comment="added mute and clear">
+      <change afterPath="$PROJECT_DIR$/src/buttons/deleteticket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/buttons/ticketsupport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/fun/fun-together.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/fun/meme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/moderation/setTicket.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/allgemeines/ping.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/allgemeines/ping.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/allgemeines/poll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/allgemeines/poll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/allgemeines/taschenrechner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/allgemeines/taschenrechner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/allgemeines/uptime.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/allgemeines/uptime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/moderation/mute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/moderation/mute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package" />
-        <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -53,6 +53,7 @@
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "E:/Dev/discord-serversystem",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.nodejs",
     "ts.external.directory.path": "C:\\Users\\adabr\\AppData\\Local\\JetBrains\\Toolbox\\apps\\IDEA-U\\ch-0\\221.5080.210\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
   }
 }]]></component>
@@ -82,7 +83,11 @@
       <option name="presentableId" value="Default" />
       <updated>1649955475652</updated>
       <workItem from="1649955476885" duration="758000" />
-      <workItem from="1650287806686" duration="6911000" />
+      <workItem from="1650287806686" duration="7605000" />
+      <workItem from="1650298683662" duration="4698000" />
+      <workItem from="1650384219577" duration="1164000" />
+      <workItem from="1650386070003" duration="1000" />
+      <workItem from="1650389191018" duration="3135000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1649955796581</created>
@@ -98,7 +103,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649956214060</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="setup fix">
+      <created>1650295672695</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1650295672695</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added mute and clear">
+      <created>1650295688218</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650295688218</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +145,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="init part 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="init part 3" />
+    <MESSAGE value="setup fix" />
+    <MESSAGE value="added mute and clear" />
+    <option name="LAST_COMMIT_MESSAGE" value="added mute and clear" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
