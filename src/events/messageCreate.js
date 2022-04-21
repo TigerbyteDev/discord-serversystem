@@ -22,6 +22,7 @@ module.exports = {
                 tdhandler.log(`${message.author.tag} hat eine Nachricht gesendet mit einem Toxic-level von **${
                     e.results[0].match ? Math.round(e.results[0].probabilities[1] * 100) : Math.round(e.results[0].probabilities[0] * 100)
                 }%**.`);
+                break;
             }
         }
     }

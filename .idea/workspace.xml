@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2297013c-c78d-47e4-b402-82fbaca4ecb7" name="Changes" comment="adopted tdhandler@1.1.7">
-      <change afterPath="$PROJECT_DIR$/src/events/messageCreate.js" afterDir="false" />
+    <list default="true" id="2297013c-c78d-47e4-b402-82fbaca4ecb7" name="Changes" comment="added tensorflow toxic filter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/fun/fun-together.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/fun/fun-together.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/events/messageCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/events/messageCreate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +88,7 @@
       <workItem from="1650472044730" duration="120000" />
       <workItem from="1650472535469" duration="549000" />
       <workItem from="1650475360808" duration="1708000" />
-      <workItem from="1650540140792" duration="6540000" />
+      <workItem from="1650540140792" duration="7848000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1649955796581</created>
@@ -162,7 +160,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650473092465</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fixed activities">
+      <created>1650547477271</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1650547477271</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added tensorflow toxic filter">
+      <created>1650547495018</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1650547495018</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +210,9 @@
     <MESSAGE value="adopted tdhandler@1.1.4" />
     <MESSAGE value="added ignoreLoading to taschenrechner.js" />
     <MESSAGE value="adopted tdhandler@1.1.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="adopted tdhandler@1.1.7" />
+    <MESSAGE value="fixed activities" />
+    <MESSAGE value="added tensorflow toxic filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tensorflow toxic filter" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
