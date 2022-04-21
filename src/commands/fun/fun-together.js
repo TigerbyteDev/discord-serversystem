@@ -10,27 +10,26 @@ module.exports = {
         required: true,
         choices: [{
             name: 'Kino', value: '880218394199220334'
-        }, {
+        }, /* { Server muss boosted sein
             name: 'Poker', value: '755827207812677713',
-        }, {
+        }, { Server muss boosted sein
             name: 'Schach', value: '832012774040141894',
-        }, {
-            name: 'Betrayal.io', value: '773336526917861400',
-        }, {
-            name: 'Fischen', value: '814288819477020702',
-        }, {
+        }, { Server muss boosted sein
             name: 'Scrabble', value: '879863686565621790',
-        }, {
+        }, */ {
             name: 'Wordsnack', value: '879863976006127627',
         }, {
-            name: 'Scribble.io', value: '878067389634314250',
+            name: 'Scribble.io', value: '902271654783242291',
+        }, /* { Server muss boosted sein
+           name: "Land.io", value: "903769130790969345",
         }, {
             name: 'Awkword', value: '879863881349087252',
-        }, {
+        }, {  Server muss boosted sein
             name: 'Spellcast', value: '852509694341283871',
-        }, {
+        }, { Server muss boosted sein
             name: 'Dame', value: '832013003968348200',
-        }]
+        },*/
+        ]
     }, {
         name: "channel",
         type: "CHANNEL",
