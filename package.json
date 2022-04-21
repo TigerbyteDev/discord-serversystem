@@ -4,6 +4,7 @@
     "start": "pm2 start src/index.js"
   },
   "dependencies": {
+    "@tensorflow-models/toxicity": "^1.2.2",
     "discord.js": "^13.6.0",
     "distube": "^3.3.4",
     "dotenv": "^16.0.0",
