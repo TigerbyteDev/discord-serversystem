@@ -10,7 +10,7 @@ new TDInstance({
     handling: {
         baseDir: __dirname,
         eventsDir: "./events",
-        // commandsDir: "./commands",
+        commandsDir: "./commands",
         buttonsDir: "./buttons",
         // contextDir: "./context",
     },

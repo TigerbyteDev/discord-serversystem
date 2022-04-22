@@ -1,5 +1,11 @@
 const {MessageActionRow, MessageButton} = require("discord.js");
 
+const names = {
+    '880218394199220334': "Kino",
+    '879863976006127627': "Wordsnack",
+    '902271654783242291': "Skribbl.io",
+}
+
 module.exports = {
     name: "fun-together",
     description: "Spiele oder schaue etwas mit deinen Freunden",
@@ -19,7 +25,7 @@ module.exports = {
         }, */ {
             name: 'Wordsnack', value: '879863976006127627',
         }, {
-            name: 'Scribble.io', value: '902271654783242291',
+            name: 'Scribbl.io', value: '902271654783242291',
         }, /* { Server muss boosted sein
            name: "Land.io", value: "903769130790969345",
         }, {
@@ -38,7 +44,7 @@ module.exports = {
     }],
 
     run: async ({interaction, client, tdhandler}) => {
-        const dienst = await interaction.options.get("dienst")?.value
+        const dienst = await interaction.options.get("dienst")?.value;
         const channelID = await interaction.options.get("channel")?.value
         const channel = await client.channels.fetch(channelID)
 
@@ -51,7 +57,7 @@ module.exports = {
             })
             return false;
         }
-
+        console.log(dienst)
         const invite = await fetch(`https://discord.com/api/v8/channels/${channel.id}/invites`, {
             method: 'POST',
             body: JSON.stringify({
@@ -69,7 +75,7 @@ module.exports = {
         }).then(res => res.json())
 
         await interaction.reply({
-            content: "Klicke auf den Knopf, um beizutreten",
+            content: `Klicke auf den Knopf, um **${names[dienst]}** beizutreten`,
             components: [
                 new MessageActionRow()
                     .addComponents(new MessageButton()
