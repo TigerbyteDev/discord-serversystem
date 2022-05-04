@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2297013c-c78d-47e4-b402-82fbaca4ecb7" name="Changes" comment="updated tensorflow toxic filter">
+    <list default="true" id="2297013c-c78d-47e4-b402-82fbaca4ecb7" name="Changes" comment="setup freshdb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/fun/fun-together.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/fun/fun-together.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,19 +35,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Dev/discord-serversystem&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\adabr\\AppData\\Local\\JetBrains\\Toolbox\\apps\\IDEA-U\\ch-0\\221.5080.210\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/adabr/Documents/Dev/discord-serversystem",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.nodejs",
+    "ts.external.directory.path": "C:\\Users\\adabr\\AppData\\Local\\JetBrains\\Toolbox\\apps\\IDEA-U\\ch-0\\221.5080.210\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -89,7 +87,11 @@
       <workItem from="1650475360808" duration="1708000" />
       <workItem from="1650540140792" duration="8604000" />
       <workItem from="1650552654733" duration="7000" />
-      <workItem from="1650617767544" duration="331000" />
+      <workItem from="1650617767544" duration="993000" />
+      <workItem from="1650619646658" duration="1541000" />
+      <workItem from="1650633677384" duration="41000" />
+      <workItem from="1650985059291" duration="15000" />
+      <workItem from="1651680808374" duration="4215000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1649955796581</created>
@@ -182,7 +184,84 @@
       <option name="project" value="LOCAL" />
       <updated>1650549456339</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="removed tensorflow filter due to performance issues">
+      <created>1650618324365</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1650618324366</updated>
+    </task>
+    <task id="LOCAL-00015" summary="removed tensorflow filter due to performance issues">
+      <created>1650618342076</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1650618342076</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added Name of Acitity in reply of fun-together.js">
+      <created>1650618375511</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1650618375511</updated>
+    </task>
+    <task id="LOCAL-00017" summary="added Name of Acitity in reply of fun-together.js">
+      <created>1650618388621</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1650618388621</updated>
+    </task>
+    <task id="LOCAL-00018" summary="added Name of Activity in reply of fun-together.js">
+      <created>1650618413663</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1650618413663</updated>
+    </task>
+    <task id="LOCAL-00019" summary="added freshdb">
+      <created>1651683680127</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1651683680127</updated>
+    </task>
+    <task id="LOCAL-00020" summary="installed freshdb, remove tensorflow">
+      <created>1651683701529</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1651683701529</updated>
+    </task>
+    <task id="LOCAL-00021" summary="installed freshdb, remove tensorflow">
+      <created>1651683707725</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1651683707725</updated>
+    </task>
+    <task id="LOCAL-00022" summary="installed @discordjs/builders for timestamps">
+      <created>1651684989842</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1651684989842</updated>
+    </task>
+    <task id="LOCAL-00023" summary="added counting system">
+      <created>1651685009708</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1651685009708</updated>
+    </task>
+    <task id="LOCAL-00024" summary="setup freshdb">
+      <created>1651685021381</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1651685021381</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +300,17 @@
     <MESSAGE value="fixed activities" />
     <MESSAGE value="added tensorflow toxic filter" />
     <MESSAGE value="updated tensorflow toxic filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated tensorflow toxic filter" />
+    <MESSAGE value="removed tensorflow filter due to performance issues" />
+    <MESSAGE value="added Name of Acitity in reply of fun-together.js" />
+    <MESSAGE value="added Name of activity in reply of fun-together.js" />
+    <MESSAGE value="added Name of Activity in reply of fun-together.js" />
+    <MESSAGE value="added freshdb" />
+    <MESSAGE value="installed freshdb, removed tensorflow" />
+    <MESSAGE value="installed freshdb, remove tensorflow" />
+    <MESSAGE value="installed @discordjs/builders for timestamps" />
+    <MESSAGE value="added counting system" />
+    <MESSAGE value="setup freshdb" />
+    <option name="LAST_COMMIT_MESSAGE" value="setup freshdb" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
