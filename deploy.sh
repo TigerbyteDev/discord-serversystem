@@ -5,8 +5,4 @@ echo "Updating NPM packages..."
 npm install
 
 # Restart the bot
-echo "Restarting bot..."
-npm run stop
-npm run delete
-npm run start
-pm2 logs
+bash ./restart.sh
