@@ -2,6 +2,9 @@ const { Client } = require("discord.js");
 const { TDInstance } = require("tdhandler");
 require("dotenv").config();
 
+const FreshDB = require("fresh.db");
+module.exports.db = new FreshDB();
+
 const client = new Client({
     intents: ["GUILDS", "GUILD_MESSAGES"],
 });
