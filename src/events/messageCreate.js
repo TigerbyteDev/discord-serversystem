@@ -1,4 +1,5 @@
-const toxicity = require('@tensorflow-models/toxicity');
+const { db } = require("../index.js");
+const { time } = require("@discordjs/builders");
 
 module.exports = {
     name: "messageCreate",
@@ -8,23 +9,36 @@ module.exports = {
         const client = tdhandler.getClient;
         if (message.author.id === client.user.id) return false;
 
-        async function toxicCheck() {
-            const model = await toxicity.load(0.6, ["identity_attack", "insult", "obscene", "severe_toxicity", "sexual_explicit", "threat", "toxicity"]);
-            const predictions = await model.classify(message.content);
-            console.log(predictions);
-            for (const e of predictions) {
-                if (e.results[0].match) {
-                    await message.reply({
-                        content: `Deine Nachricht wird gelöscht, weil sie ein Toxic-level von **${
-                            e.results[0].match ? Math.round(e.results[0].probabilities[1] * 100) : Math.round(e.results[0].probabilities[0] * 100)
-                        }%** hat.`
-                    });
-                    message.delete();
-                    tdhandler.log(`${message.author.tag} hat eine Nachricht gesendet mit einem Toxic-level von **${
-                        e.results[0].match ? Math.round(e.results[0].probabilities[1] * 100) : Math.round(e.results[0].probabilities[0] * 100)
-                    }%**.`);
-                    break;
+        // Counting system
+        if (message.channel.name === "zählen") {
+            const current = await db.get("counting.current.count");
+            const number = parseInt(message.content);
+            const user = await db.get(`counting.current.user`);
+            const rekord = db.get("counting.record.count");
+
+            if (number === current + 1 && message.author.id !== user) {
+                db.set("counting.current.count", number);
+                db.set("counting.current.user", message.author.id);
+
+                const emoji = number === 100 ? "💯" : rekord < current ? "🔥" : "✅";
+                message.react(emoji);
+                return true;
+            }
+
+            if (number !== current + 1 || message.author.id === user) {
+                const grund = number !== current + 1 ? "den falschen Wert angegeben hat" : "bereits gezählt hat";
+                message.react("❌");
+                message.channel.send(`${message.author} hat bei **${current}** gefailt, weil er:sie ${grund}. \n Wir beginnen wieder bei **0**`);
+                db.set("counting.current.count", 0);
+                db.set("counting.current.user", null);
+
+                if (rekord < current) {
+                    db.set("counting.record.count", current);
+                    db.set("counting.record.user", message.author.id);
+                    message.channel.setTopic(`Der aktuelle Rekord **${current}** wurde ${time(new Date, "R")} aufgestellt!`);
                 }
+
+                return false;
             }
         }
     }
