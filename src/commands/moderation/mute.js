@@ -1,5 +1,5 @@
 const {MessageButton, MessageActionRow} = require("discord.js");
-
+const { time } = require("@discordjs/builders");
 const ms = require('ms');
 
 module.exports = {
@@ -36,7 +36,7 @@ module.exports = {
             interaction.reply({
                 embeds: [
                     tdhandler.createEmbed("error")
-                        .setDescription(`${person.member.user} ist bereits bis <t:${person?.member.communicationDisabledUntilTimestamp}:d> stummgeschaltet.`)
+                        .setDescription(`${person.member.user} ist bereits bis ${time(person?.member.communicationDisabledUntilTimestamp, "d")} stummgeschaltet.`)
                 ]
             })
 
