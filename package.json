@@ -1,7 +1,9 @@
 {
   "scripts": {
-    "test": "node src/index.js",
-    "start": "pm2 start src/index.js"
+    "test": "node serverbyte.js",
+    "start": "pm2 start serverbyte.js",
+    "stop": "pm2 stop serverbyte",
+    "delete": "pm2 delete serverbyte"
   },
   "dependencies": {
     "@discordjs/builders": "^0.13.0",
