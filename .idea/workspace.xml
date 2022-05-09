@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2297013c-c78d-47e4-b402-82fbaca4ecb7" name="Changes" comment="edited deploy script&#10;added restart script">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2297013c-c78d-47e4-b402-82fbaca4ecb7" name="Changes" comment="npm update..." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,6 +102,7 @@
       <workItem from="1650985059291" duration="15000" />
       <workItem from="1651680808374" duration="6139000" />
       <workItem from="1652112240597" duration="14000" />
+      <workItem from="1652113624551" duration="333000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1649955796581</created>
@@ -301,7 +300,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651686041359</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="npm update...">
+      <created>1652113711597</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1652113711597</updated>
+    </task>
+    <task id="LOCAL-00030" summary="npm update...">
+      <created>1652113952950</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1652113952950</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +340,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="setup fix" />
     <MESSAGE value="added mute and clear" />
     <MESSAGE value="added Ticket system" />
     <MESSAGE value="added Activities and Meme" />
@@ -352,7 +364,8 @@
     <MESSAGE value="pushhhhhhhhhh" />
     <MESSAGE value="created deploy script" />
     <MESSAGE value="edited deploy script&#10;added restart script" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited deploy script&#10;added restart script" />
+    <MESSAGE value="npm update..." />
+    <option name="LAST_COMMIT_MESSAGE" value="npm update..." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
