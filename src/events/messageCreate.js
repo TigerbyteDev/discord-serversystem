@@ -10,12 +10,14 @@ module.exports = {
         if (message.author.id === client.user.id) return false;
 
         // Counting system
-        if (message.channel.name === "zählen") {
-            const current = await db.get("counting.current.count");
+        if (message.channel.name === "zählen") {            
             const number = parseInt(message.content);
+            if(isNaN(number)) return false;
+            
+            const current = await db.get("counting.current.count");
             const user = await db.get(`counting.current.user`);
             const rekord = db.get("counting.record.count");
-
+            
             if (number === current + 1 && message.author.id !== user) {
                 db.set("counting.current.count", number);
                 db.set("counting.current.user", message.author.id);
