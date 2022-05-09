@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2297013c-c78d-47e4-b402-82fbaca4ecb7" name="Changes" comment="pushhhhhhhhhh">
-      <change afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serverbyte.js" afterDir="false" />
+    <list default="true" id="2297013c-c78d-47e4-b402-82fbaca4ecb7" name="Changes" comment="edited deploy script&#10;added restart script">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,19 +35,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/adabr/Documents/Dev/discord-serversystem",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.nodejs",
-    "ts.external.directory.path": "C:\\Users\\adabr\\AppData\\Local\\JetBrains\\Toolbox\\apps\\IDEA-U\\ch-0\\221.5080.210\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/adabr/Documents/Dev/discord-serversystem&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\adabr\\AppData\\Local\\JetBrains\\Toolbox\\apps\\IDEA-U\\ch-0\\221.5080.210\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="npm.start">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -106,7 +102,8 @@
       <workItem from="1650619646658" duration="1541000" />
       <workItem from="1650633677384" duration="41000" />
       <workItem from="1650985059291" duration="15000" />
-      <workItem from="1651680808374" duration="4908000" />
+      <workItem from="1651680808374" duration="6139000" />
+      <workItem from="1652112240597" duration="14000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1649955796581</created>
@@ -290,7 +287,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651685160605</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="created deploy script">
+      <created>1651685880985</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1651685880985</updated>
+    </task>
+    <task id="LOCAL-00028" summary="edited deploy script&#10;added restart script">
+      <created>1651686041359</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1651686041359</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,8 +327,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="init" />
-    <MESSAGE value="init part 3" />
     <MESSAGE value="setup fix" />
     <MESSAGE value="added mute and clear" />
     <MESSAGE value="added Ticket system" />
@@ -341,7 +350,9 @@
     <MESSAGE value="setup freshdb" />
     <MESSAGE value="fixed some formatting" />
     <MESSAGE value="pushhhhhhhhhh" />
-    <option name="LAST_COMMIT_MESSAGE" value="pushhhhhhhhhh" />
+    <MESSAGE value="created deploy script" />
+    <MESSAGE value="edited deploy script&#10;added restart script" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited deploy script&#10;added restart script" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
