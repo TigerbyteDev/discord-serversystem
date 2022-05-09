@@ -16,7 +16,6 @@ module.exports = {
             required: false
         }
     ],
-    ignore: false,
 
     run: async ({interaction, tdhandler}) => {
         const subreddit = await interaction.options.get("subreddit")?.value ?? subreddits[Math.floor(Math.random() * subreddits.length)]
